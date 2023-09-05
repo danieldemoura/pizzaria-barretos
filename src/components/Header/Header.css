@@ -16,5 +16,6 @@
         align-items: flex-end;
         padding-right: 17rem;
         background: var(--c-header-background-color)  url(../../assets/background-desktop.jpg) no-repeat center left / cover;
+        background-attachment: fixed;
     }
 }
