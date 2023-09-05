@@ -1,3 +1,12 @@
+.c-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0rem;
+
+    width: 100%;
+}
+
 .c-card {
     display: flex;
     flex-direction: column;
@@ -38,6 +47,10 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .c-card-wrapper {
+        gap: 5rem;
+    }
 
     .c-card {
         flex-direction: row;
