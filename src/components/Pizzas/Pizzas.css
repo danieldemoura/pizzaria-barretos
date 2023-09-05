@@ -1,0 +1,33 @@
+.c-section__pizzas {
+    display: grid;
+    row-gap: 7rem;
+    column-gap: 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 27rem));
+    justify-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    margin: 9rem;
+}
+
+.c-pizza {
+    width: 100%;
+}
+
+.c-pizza__title {
+    font-size: 2.4rem;
+    color: var(--text-secundary-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.c-pizza__img {
+    width: 100%;
+    height: 24rem;
+
+    object-fit: cover;
+    border: 1rem solid #191919;
+    border-radius: 3rem 3rem 0rem 0rem;
+    margin-top: 1rem;
+
+}

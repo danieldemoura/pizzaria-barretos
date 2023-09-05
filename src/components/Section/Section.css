@@ -1,0 +1,10 @@
+.c-section {
+    background: var(--c-header-background-color)  url(../../assets/background.png);
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 7rem 2.1rem;
+}

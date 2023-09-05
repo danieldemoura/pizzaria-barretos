@@ -1,0 +1,43 @@
+.c-info-bar {
+    background-color: var(--c-infor-bar-background-color);
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+
+    padding: 3rem 0rem;
+}
+
+.c-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem
+}
+
+.c-figure__legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.c-figure__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--c-figure-title-color);
+}
+
+.c-figure__info {
+    color: var(--c-figure-title-color);
+    font-size: 1.6rem;
+    text-align: center;
+
+    width: 27rem;
+}
+
+.c-info-bar .c-figure:first-child .c-figure__info.address {
+    width: 18rem;
+}

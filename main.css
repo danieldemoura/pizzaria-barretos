@@ -1,0 +1,17 @@
+/* Importando estilos base */
+@import url(./src/reset.css);
+@import url(./src/global.css);
+
+/* Importando estilos dos componentes */
+@import url(./src/components/Menu/Menu.css);
+@import url(./src/components/Header/Header.css);
+@import url(./src/components/HeaderTitle/HeaderTitle.css);
+@import url(./src/components/Button/Button.css);
+@import url(./src/components/InfoBar/Infobar.css);
+@import url(./src/components/Section/Section.css);
+@import url(./src/components/Pizzas/Pizzas.css);
+@import url(./src/components/OpeningHours/OpeningHours.css);
+@import url(./src/components/Contact/Contact.css);
+@import url(./src/components/Footer/Footer.css)
+
+

@@ -1,0 +1,136 @@
+.c-menu {
+    display: flex;
+    background-color: var(--c-menu-background-color);
+    height: 6rem;
+}
+
+.c-menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex: 1;
+    list-style: none;
+    position: relative;
+    padding: 0rem 7.8rem 0rem 2.5rem;
+}
+
+.c-menu__logo {
+    font-size: 2.4rem;
+    color: var(--c-menu-color);
+}
+
+.c-footer .c-menu__logo {
+    font-size: 4.2rem;
+}
+
+.c-menu__button {
+    display: grid;
+    gap: .5rem;
+
+    width: 3rem;
+    height: 2rem;
+    position: relative;
+}
+
+.c-menu__input {
+    position: absolute;
+    top: -0.4rem;
+    left: 0.2rem;
+    z-index: 5;
+
+    width: 2.5rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+
+}
+
+.c-menu__bar{
+    width: 100%;
+    height: .4rem;
+    background-color: var(--c-menu-button-background-color);
+    transition: all .5s ease;
+
+}
+
+.c-menu__input:checked ~ .c-menu__bar {
+    transition: all .5s ease;
+}
+
+.c-menu__input:checked ~ .c-menu__bar:nth-of-type(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.c-menu__input:checked ~ .c-menu__bar:nth-of-type(2) {
+    opacity: 0;
+}
+
+.c-menu__input:checked ~ .c-menu__bar:nth-of-type(3) {
+    transform: rotate(-45deg) translate(4px, -5px);
+}
+
+.c-menu-dropdown {
+    position: absolute;
+    top: 6rem;
+    left: -50rem;
+    right: 0rem;
+
+
+    background-color: var(--c-menu-dropdown-background-color);
+    width: 100%;
+
+    transition: all .5s ease;
+}
+
+.c-menu-dropdown__list {
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.c-menu-dropdown__link {
+    color: var(--c-menu-dropdown-link-color);
+    border-bottom: .1rem solid var(--c-menu-dropdown-border-bottom-color);
+    background-color: var(--color-tertiary);
+    text-decoration: none;
+    padding: 1rem;
+
+    display: block;
+}
+
+.c-menu-dropdown__link:hover {
+    background-color: var(--color-primary);
+    color: var(--text-secundary-color)
+}
+
+@media screen and (min-width: 768px) {
+
+    .c-menu__button {
+        display: none;
+    }
+
+    .c-menu-dropdown {
+        position: initial;
+        z-index: initial;
+        background-color: transparent;
+        width: fit-content;
+    }
+
+    .c-menu-dropdown__list {
+        display: flex;
+    }
+    
+    .c-menu-dropdown__link {
+        color: var(--text-secundary-color);
+        background-color: transparent;
+        border: none;
+    }
+
+    .c-menu-dropdown__link:hover {
+        color: #000;
+    }
+}

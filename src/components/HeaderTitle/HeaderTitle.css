@@ -1,0 +1,74 @@
+.c-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 23.1rem;
+}
+
+.c-header-title__title {
+    color: var(--c-title-color);
+    font-size: 4.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.c-header-title__info {
+    color: var(--text-secundary-color);
+    font-size: 1.6rem;
+    text-align: center;
+
+    width: 23.1rem;
+}
+
+.c-header-title  {
+    justify-content: initial;
+}
+
+.c-header-title__title {
+    text-shadow: 0rem .3rem .5rem var(--c-title-text-shadow);
+}
+
+.c-header-title__info {
+    width: 29rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .c-header-title {
+        width: fit-content;
+    }
+
+    .c-header-title__title {
+        font-size: 5.4rem;
+    }
+
+    .c-header-title__info {
+        font-size: 1.8rem;
+        
+    }
+
+    .c-headline .c-header-title__title {
+        width: 35rem;
+        font-size: 6.8rem;
+        text-shadow: none;
+    }
+
+    .c-headline .c-header-title__info {
+        width: 35rem;
+    }
+
+    .c-menu-pizzas .c-header-title__info {
+        width: 69rem;
+    }
+
+    .c-opening .c-header-title__info {
+        width: 72rem;
+    }
+
+    .c-contact .c-header-title__info {
+        width: 48.7rem;
+    }
+}
