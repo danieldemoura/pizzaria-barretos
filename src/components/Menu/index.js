@@ -9,7 +9,7 @@ export default function Menu() {
 
         function openMenuDropDown() {
             isMenuOpen = !isMenuOpen;
-            isMenuOpen ? menuDropDown.style.left = "0rem"    : menuDropDown.style.left = "-200rem";
+            isMenuOpen ? menuDropDown.style.left = "0px"    : menuDropDown.style.left = "-200rem";
         }
     }
 
